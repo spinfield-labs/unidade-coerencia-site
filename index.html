@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidade de Coerência</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>🌀 Unidade de Coerência</h1>
+    <p>Simule o diagnóstico simbólico de coerência informacional.</p>
+    <textarea id="inputTexto" placeholder="Digite seu texto aqui..."></textarea>
+    <div>
+      Idioma:
+      <select id="idioma">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+      Estilo:
+      <select id="estilo">
+        <option value="default">Padrão</option>
+        <option value="zen-formal">Zen Formal</option>
+        <option value="ancestral-circular">Ancestral Circular</option>
+      </select>
+    </div>
+    <button onclick="simularDiagnostico()">Simular Diagnóstico</button>
+
+    <section id="resultado">
+      <h2>Resultado:</h2>
+      <p id="interpretacao"></p>
+      <p id="assinatura"></p>
+      <p id="estado"></p>
+    </section>
+
+    <canvas id="graficoRadar" width="400" height="400"></canvas>
+    <div id="esfera" class="pulsante"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
